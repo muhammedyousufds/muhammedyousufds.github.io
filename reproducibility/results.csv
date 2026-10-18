@@ -1,0 +1,16 @@
+﻿check_id,calculation,formula,result,reference_value,tolerance,status,source_locator,interpretation
+C01,Revenue change,FY2025 minus FY2024 (€m),-42.8000,-42.8000,0.00015,PASS,Revenue; Annual Report p.47,Calculated from reported IFRS values.
+C02,Revenue percentage change,(FY2025 / FY2024 − 1) × 100,-5.9231,-5.9231,0.00015,PASS,Revenue; Annual Report p.47,Reported-euro movement; distinct from constant-currency APM.
+C03,Gross margin FY2024,Gross profit / revenue × 100,44.8934,44.8934,0.00015,PASS,Gross profit and revenue; Annual Report p.47,Calculated percentage.
+C04,Gross margin FY2025,Gross profit / revenue × 100,46.4107,46.4107,0.00015,PASS,Gross profit and revenue; Annual Report p.47,Calculated percentage.
+C05,Gross margin movement,FY2025 margin − FY2024 margin (percentage points),1.5173,1.5173,0.00015,PASS,Gross profit and revenue; Annual Report p.47,Calculated percentage-point movement.
+C06,Inventory tie-out FY2024,Raw materials + finished goods + provision − reported net inventory (€m),0.0000,0.0000,0.00015,PASS,Note 15 p.83; statement p.48,Zero difference at reported €0.1m precision.
+C07,Inventory tie-out FY2025,Raw materials + finished goods + provision − reported net inventory (€m),0.0000,0.0000,0.00015,PASS,Note 15 p.83; statement p.48,Zero difference at reported €0.1m precision.
+C08,Net inventory percentage change,(FY2025 / FY2024 − 1) × 100,-15.0415,-15.0415,0.00015,PASS,"Net inventories; Annual Report pp.48, 83",Calculated percentage change.
+C09,Provision / finished goods FY2024,Absolute provision / finished goods × 100,8.8403,8.8403,0.00015,PASS,Note 15 p.83,Denominator follows the documented calculation basis.
+C10,Provision / finished goods FY2025,Absolute provision / finished goods × 100,8.0408,8.0408,0.00015,PASS,Note 15 p.83,Denominator follows the documented calculation basis.
+C11,Provision ratio movement,FY2025 ratio − FY2024 ratio (percentage points),-0.7995,-0.7995,0.00015,PASS,Note 15 p.83,Rounds to −0.80 percentage points; does not assess adequacy.
+C12,GFG-defined NWC FY2024,Sum of five disclosed APM components (€m),-54.8000,-54.8000,0.00015,PASS,APM definition p.129,"GFG APM, not conventional current assets less current liabilities."
+C13,GFG-defined NWC FY2025,Sum of five disclosed APM components (€m),-80.3000,-80.3000,0.00015,PASS,APM definition p.129,"GFG APM, not conventional current assets less current liabilities."
+C14,Pro-Forma Cash bridge difference,IFRS cash + APM adjustment + investment funds − reported Pro-Forma Cash (€m),0.0000,0.0000,0.00015,PASS,APM definition p.129,Published APM arithmetic reproduces; APM is not an IFRS line item.
+C15,Q03 Note 16/APM difference,Restricted cash + deposit receivables − APM cash adjustment (€m),0.9000,0.9000,0.00015,PASS,Note 16 p.84; APM definition p.129,Unexplained and unallocated public-source difference; no misstatement is inferred.

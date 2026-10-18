@@ -6,24 +6,23 @@
   <meta name="description" content="An educational public-source financial analysis portfolio by Muhammed Yousuf, focused on IFRS, audit risk assessment, Python, Excel and human-checked AI assistance.">
   <meta name="theme-color" content="#132f3d">
   <title>Muhammed Yousuf | Audit &amp; Finance Analytics</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="topbar">
     <a class="wordmark" href="index.html"><span class="mark">MY</span><span>Muhammed Yousuf <small>Accounting · Audit · Analytics</small></span></a>
-    <nav aria-label="Primary navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">Menu</button><nav id="primary-nav" aria-label="Primary navigation">
       <a href="#about">About</a><a href="case-study.html">Featured project</a><a href="methodology.html">Methodology</a><a href="evidence.html">Evidence</a>
     </nav>
   </header>
   <main id="main">
     <section class="hero wrap">
       <div class="hero-copy">
-        <p class="eyebrow">Accounting &amp; finance graduate · UK accounting experience</p>
+        <p class="eyebrow">Accounting professional · UK finance operations · audit analytics</p>
         <h1>Turning financial information into careful, explainable analysis.</h1>
-        <p class="lede">I’m an MSc Accounting &amp; Finance (Merit) graduate with 16 months of hands-on UK accounting experience at Davy’s of London, supporting finance operations across four legal entities.</p>
-        <p class="lede-small">My work covered accounts payable, general-ledger journals, bank and supplier reconciliations, credit-card accounting, BACS payment preparation and month-end close support in Microsoft Dynamics NAV and SAP Concur. I also hold four ACCA exemptions and have passed Taxation (TX).</p>
-        <div class="actions"><a class="button primary" href="case-study.html">Explore the GFG case study</a><a class="text-link" href="https://github.com/muhammedyousufds/muhammedyousufds.github.io">View public GitHub repository ↗</a></div>
+        <p class="lede">I’m an accounting and finance professional with an MSc in Accounting &amp; Finance (Merit) and practical UK accounting experience supporting operations across four legal entities.</p>
+        <p class="lede-small">At Davy’s of London I supported accounts payable, invoice coding, journals, bank, corporate-card and supplier reconciliations, fortnightly payment runs of approximately £400,000, month-end close and information requested by external auditors. I completed a practical accounting training programme in London. ACCA: four exemptions and Taxation (TX) passed; planning to re-register and continue.</p><div class="hero-specialisms" aria-label="Portfolio specialisms"><span>Accounting</span><span>Audit Analytics</span><span>Responsible AI</span></div>
+        <div class="actions"><a class="button primary" href="case-study.html">Explore the GFG case study</a><a class="text-link" href="https://github.com/muhammedyousufds/muhammedyousufds.github.io">View source and reproducible checks ↗</a></div>
       </div>
       <aside class="hero-panel">
         <p class="eyebrow">Featured independent study</p>
@@ -38,7 +37,7 @@
 
     <section class="section wrap" id="about">
       <div class="section-intro"><p class="eyebrow">About me</p><h2>Building from practical finance work toward audit and analytics.</h2></div>
-      <div class="body-copy"><p>Day-to-day finance work showed me where errors, cut-off issues and control gaps can arise in practice. This portfolio is how I’m building on that foundation: using public IFRS disclosures, Python, Excel and carefully reviewed AI assistance to practise financial analysis and audit risk assessment.</p><p>AI can help draft or organise selected work. I verify material outputs against source disclosures and calculations, and I make the final analytical judgements myself. I’m pursuing audit and assurance opportunities and am open to international relocation.</p><div class="chips"><span>MSc Accounting &amp; Finance · Merit</span><span>16 months UK accounting experience</span><span>4 ACCA exemptions · TX passed</span><span>Open to international relocation</span></div></div>
+      <div class="body-copy"><p>My accounting experience includes work across four legal entities in accounts payable, supplier invoices, general-ledger coding and journals, bank and corporate-card reconciliations, payment runs of approximately £400,000 fortnightly, supplier reconciliations and month-end support. I also provided information requested by external auditors; I did not perform an audit.</p><p>I completed a Practical Accounting Training Programme in London (April 2024–February 2025). I hold an MSc Accounting &amp; Finance with Merit (March 2024). I have four ACCA exemptions and have passed Taxation (TX); I plan to re-register and continue. This portfolio demonstrates how I apply accounting knowledge, Python, Excel and carefully checked AI assistance to public-source analysis.</p><div class="chips"><span>MSc Accounting &amp; Finance · Merit</span><span>Multi-entity accounting operations</span><span>4 ACCA exemptions · TX passed</span><span>Practical accounting training completed</span></div></div>
     </section>
 
     <section class="section tinted">
@@ -50,11 +49,14 @@
     <section class="section wrap">
       <div class="section-intro"><p class="eyebrow">How I work</p><h2>Evidence first, conclusions kept proportionate.</h2></div>
       <div class="three-cards"><article><span class="card-number">01</span><h3>Trace</h3><p>Start with published disclosures and record the source, reporting perimeter and period.</p></article><article><span class="card-number">02</span><h3>Analyse</h3><p>Separate reported amounts, calculated ratios and management-defined alternative performance measures.</p></article><article><span class="card-number">03</span><h3>Challenge</h3><p>Describe a plausible risk hypothesis, the relevant assertion and evidence that would be needed to test it.</p></article></div>
-      <p class="notice-line"><strong>Current evidence boundary:</strong> 76 Python–Excel checks are reported in the selected case-study materials as completed internally. The scripts, workbook, inputs and detailed check log are not in the public repository, so a visitor cannot independently rerun those checks today.</p>
+      <p class="notice-line"><strong>Evidence boundary:</strong> a separate public Python package now reproduces 15 selected calculations from sanitized public-source inputs. The original 76 Python–Excel cross-checks were completed internally; the full scripts, workbook and detailed log remain private and are not represented as publicly rerunnable.</p>
     </section>
 
+    <section class="section tinted" id="how-i-use-ai"><div class="wrap"><div class="section-intro"><p class="eyebrow">Responsible AI</p><h2>How I Use AI</h2><p class="section-lede">AI assists selected reading and drafting tasks. It does not replace source checking, calculation or professional judgement.</p></div><div class="three-cards"><article><span class="card-number">AI assisted</span><h3>Organise and draft</h3><p>AI helped organise public disclosures and draft analytical observations for the GFG case study.</p></article><article><span class="card-number">Python + Excel</span><h3>Calculate and reconcile</h3><p>Code and spreadsheet formulas calculated financial trends, ratios, GFG-defined NWC, the published Pro-Forma Cash bridge and sensitivity illustrations. A new public package lets visitors rerun 15 selected calculations.</p></article><article><span class="card-number">Human review</span><h3>Check and decide</h3><p>I traced statements to annual-report pages, reperformed figures, separated fact from hypothesis and rejected unsupported causal claims. The €0.9m cash difference remains unexplained.</p></article></div><p class="notice-line"><strong>Example from the review record:</strong> the original AI draft did not quantify the inventory-provision ratio movement. A provisional human review draft gave 0.84 percentage points; recalculation showed 0.7995 points, rounded to 0.80. The 0.84 figure was a human drafting error, not an AI suggestion. Another broad supplier-finance inference was narrowed because the public disclosures do not map those balances to the NWC payable line. AI can omit context, misstate arithmetic or suggest explanations the evidence cannot support.</p><p class="small-note">Read the <a href="methodology.html#ai-review">AI review method</a> and <a href="evidence.html#reproducibility">public reproducibility package</a>.</p></div></section>
     <section class="contact-band"><div class="wrap contact-inner"><div><p class="eyebrow">Professional focus</p><h2>Audit · Assurance · Finance Analytics</h2><p>I’m interested in roles where careful accounting, data analysis and clear communication support reliable financial reporting.</p></div><div class="actions"><a class="button light" href="https://github.com/muhammedyousufds">GitHub profile ↗</a><a class="button outline-light" href="case-study.html">View project evidence</a></div></div></section>
   </main>
   <footer class="footer wrap"><span>Independent educational portfolio · No company endorsement implied.</span><a href="methodology.html">Methodology and limitations</a></footer>
 </body>
 </html>
+
+

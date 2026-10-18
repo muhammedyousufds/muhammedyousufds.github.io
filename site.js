@@ -18,3 +18,4 @@ nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', clos
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeMenu();
 });
+

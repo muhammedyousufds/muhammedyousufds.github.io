@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A statement-by-statement FY2024–FY2025 analysis of Global Fashion Group S.A., with selected ratios, audit questions and a separate KAM comparison.">
+  <meta name="theme-color" content="#ffffff">
+  <title>GFG Financial Statement Analysis | Muhammed Yousuf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#statements">Skip to content</a>
+<div id="gfg-statement-preview">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap");
+    #gfg-statement-preview {
+      color-scheme: light dark;
+      --page: light-dark(#f5f7f5, #111c20);
+      --surface: light-dark(#ffffff, #1a292e);
+      --ink: light-dark(#172c35, #edf3f1);
+      --muted: light-dark(#536b72, #b4c1c2);
+      --line: light-dark(#d5dfdc, #34474b);
+      --teal: light-dark(#087b75, #68c7bd);
+      --teal-soft: light-dark(#e8f3f0, #203c3b);
+      --navy: light-dark(#16313d, #dcebea);
+      --soft: light-dark(#edf2ef, #223238);
+      background: var(--page);
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+      width: 100%;
+    }
+    #gfg-statement-preview * { box-sizing: border-box; }
+    #gfg-statement-preview .page { max-width: 1180px; margin: 0 auto; padding: 22px 30px 36px; }
+    #gfg-statement-preview .topbar { display:flex; justify-content:space-between; align-items:center; gap:20px; padding: 8px 0 18px; border-bottom:1px solid var(--line); }
+    #gfg-statement-preview .brand { display:flex; align-items:center; gap:11px; font-weight:700; letter-spacing:.01em; }
+    #gfg-statement-preview .monogram { display:grid; place-items:center; width:37px; height:37px; border:1px solid var(--line); color:var(--teal); font-family:"Source Serif 4", Georgia, serif; font-size:18px; font-weight:700; }
+    #gfg-statement-preview .brand small { display:block; color:var(--muted); font-size:11px; font-weight:500; }
+    #gfg-statement-preview .nav { display:flex; flex-wrap:wrap; gap:18px; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .nav span:last-child { color:var(--ink); }
+    #gfg-statement-preview .hero { padding:38px 0 24px; }
+    #gfg-statement-preview .eyebrow { margin:0 0 10px; color:var(--teal); font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    #gfg-statement-preview h1, #gfg-statement-preview h2, #gfg-statement-preview h3 { color:var(--navy); }
+    #gfg-statement-preview h1 { max-width:900px; margin:0; font:600 clamp(38px,5.4vw,64px)/1.02 "Source Serif 4", Georgia, serif; letter-spacing:-.035em; }
+    #gfg-statement-preview .lede { max-width:780px; margin:16px 0 0; color:var(--muted); font-size:16px; }
+    #gfg-statement-preview .scope { display:flex; align-items:flex-start; justify-content:space-between; gap:18px; margin:20px 0 0; padding:13px 15px; background:var(--soft); }
+    #gfg-statement-preview .scope strong { color:var(--ink); font-size:12px; }
+    #gfg-statement-preview .scope p { margin:2px 0 0; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .scope-tag { flex:0 0 auto; color:var(--teal); font-size:11px; font-weight:700; letter-spacing:.04em; }
+    #gfg-statement-preview .company-context { display:grid; grid-template-columns:190px minmax(0,1fr); gap:22px; margin:0 0 24px; padding:17px 19px; background:var(--surface); border:1px solid var(--line); }
+    #gfg-statement-preview .company-context h2 { margin:0; font:600 21px/1.15 "Source Serif 4", Georgia, serif; }
+    #gfg-statement-preview .company-context p { margin:0; color:var(--muted); font-size:13px; }
+    #gfg-statement-preview .company-context p + p { margin-top:7px; }
+    #gfg-statement-preview .metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:22px 0 28px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    #gfg-statement-preview .metric { padding:16px 18px 16px 0; }
+    #gfg-statement-preview .metric + .metric { padding-left:18px; border-left:1px solid var(--line); }
+    #gfg-statement-preview .metric-label { display:block; color:var(--muted); font-size:11px; }
+    #gfg-statement-preview .metric-value { display:block; margin-top:3px; color:var(--navy); font:600 25px/1.2 "Source Serif 4", Georgia, serif; }
+    #gfg-statement-preview .metric-note { display:block; margin-top:4px; color:var(--muted); font-size:11px; }
+    #gfg-statement-preview .statement-tabs { display:flex; gap:25px; border-bottom:1px solid var(--line); margin:0 0 24px; }
+    #gfg-statement-preview .statement-tab { border:0; border-bottom:3px solid transparent; padding:11px 2px 10px; background:transparent; color:var(--muted); font:600 13px "DM Sans", Arial, sans-serif; cursor:pointer; }
+    #gfg-statement-preview .statement-tab[aria-selected="true"] { border-bottom-color:var(--teal); color:var(--ink); }
+    #gfg-statement-preview .statement-tab:focus-visible, #gfg-statement-preview summary:focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
+    #gfg-statement-preview .panel[hidden] { display:none; }
+    #gfg-statement-preview .section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:20px; margin:0 0 12px; }
+    #gfg-statement-preview h2 { margin:0; font:600 28px/1.12 "Source Serif 4", Georgia, serif; }
+    #gfg-statement-preview h3 { margin:0; font:600 20px/1.2 "Source Serif 4", Georgia, serif; }
+    #gfg-statement-preview .caption { margin:5px 0 0; color:var(--muted); font-size:11px; }
+    #gfg-statement-preview .source-link { flex:0 0 auto; color:var(--teal); font-size:11px; font-weight:700; text-decoration:none; }
+    #gfg-statement-preview .statement-grid { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(270px,.8fr); gap:30px; align-items:start; }
+    #gfg-statement-preview .table-wrap { overflow-x:auto; }
+    #gfg-statement-preview table { width:100%; border-collapse:collapse; font-size:12px; }
+    #gfg-statement-preview th { padding:8px 9px; border-bottom:1px solid var(--line); color:var(--muted); font-size:10px; font-weight:700; text-align:right; white-space:nowrap; }
+    #gfg-statement-preview th:first-child { text-align:left; }
+    #gfg-statement-preview td { padding:6px 9px; border-bottom:1px solid var(--line); text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+    #gfg-statement-preview td:first-child { width:55%; text-align:left; white-space:normal; }
+    #gfg-statement-preview tr.total td { color:var(--ink); font-weight:700; }
+    #gfg-statement-preview tr.subhead td { padding-top:13px; color:var(--teal); font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    #gfg-statement-preview .table-note { margin:8px 0 0; color:var(--muted); font-size:10px; }
+    #gfg-statement-preview .analysis { padding-left:20px; border-left:2px solid var(--teal); }
+    #gfg-statement-preview .analysis .eyebrow { margin-bottom:8px; }
+    #gfg-statement-preview .analysis p { margin:8px 0 0; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .analysis strong { color:var(--ink); }
+    #gfg-statement-preview .ratio-section { margin-top:34px; padding-top:23px; border-top:1px solid var(--line); }
+    #gfg-statement-preview .ratio-intro { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; margin-bottom:14px; }
+    #gfg-statement-preview .ratio-intro p { max-width:500px; margin:0; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .ratio-list { border-top:1px solid var(--line); }
+    #gfg-statement-preview .ratio-header { display:grid; grid-template-columns:minmax(185px,1.3fr) repeat(3,minmax(75px,.55fr)); gap:12px; padding:0 4px 6px; color:var(--muted); font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+    #gfg-statement-preview .ratio-header span:not(:first-child) { text-align:right; }
+    #gfg-statement-preview details.ratio { border-bottom:1px solid var(--line); }
+    #gfg-statement-preview details.ratio summary { display:grid; grid-template-columns:minmax(185px,1.3fr) repeat(3,minmax(75px,.55fr)); align-items:center; gap:12px; padding:12px 4px; list-style:none; cursor:pointer; }
+    #gfg-statement-preview details.ratio summary::-webkit-details-marker { display:none; }
+    #gfg-statement-preview .ratio-name { color:var(--ink); font-weight:700; }
+    #gfg-statement-preview .ratio-formula { display:block; margin-top:2px; color:var(--muted); font-size:10px; font-weight:400; }
+    #gfg-statement-preview .ratio-number { color:var(--ink); text-align:right; font-variant-numeric:tabular-nums; }
+    #gfg-statement-preview .ratio-change { color:var(--teal); font-weight:700; }
+    #gfg-statement-preview .ratio-body { padding:0 4px 14px; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .ratio-body p { margin:5px 0; }
+    #gfg-statement-preview .ratio-body strong { color:var(--ink); }
+    #gfg-statement-preview .minor-note { margin:12px 0 0; color:var(--muted); font-size:10px; }
+    #gfg-statement-preview .question-row { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; margin-top:32px; padding-top:22px; border-top:1px solid var(--line); }
+    #gfg-statement-preview .question-row article { padding-right:15px; }
+    #gfg-statement-preview .question-row .eyebrow { margin-bottom:7px; }
+    #gfg-statement-preview .question-row p { margin:7px 0 0; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .method-strip { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:32px; padding:15px 17px; background:var(--teal-soft); }
+    #gfg-statement-preview .method-strip strong { color:var(--ink); }
+    #gfg-statement-preview .method-step { color:var(--muted); font-size:11px; }
+    #gfg-statement-preview .method-step b { color:var(--teal); }
+    #gfg-statement-preview .separator { color:var(--teal); }
+    #gfg-statement-preview .footer-note { margin:18px 0 0; color:var(--muted); font-size:10px; }
+    #gfg-statement-preview .preview-label { display:inline-block; margin-left:9px; color:var(--teal); font:700 10px "DM Sans", Arial, sans-serif; letter-spacing:.1em; text-transform:uppercase; vertical-align:middle; }
+    #gfg-statement-preview .preview-copy { max-width:720px; margin:8px 0 18px; color:var(--muted); font-size:13px; }
+    #gfg-statement-preview .preview-focus { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:24px; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    #gfg-statement-preview .kam-map { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    #gfg-statement-preview .preview-focus p { margin:6px 0 0; color:var(--muted); font-size:12px; }
+    @media (max-width:800px) {
+      #gfg-statement-preview .page { padding:16px 18px 28px; }
+      #gfg-statement-preview .statement-grid { grid-template-columns:1fr; }
+      #gfg-statement-preview .analysis { margin-top:15px; }
+      #gfg-statement-preview .question-row { grid-template-columns:1fr; gap:15px; }
+    }
+    @media (max-width:560px) {
+      #gfg-statement-preview .topbar { align-items:flex-start; }
+      #gfg-statement-preview .nav { display:none; }
+      #gfg-statement-preview .nav.open { display:flex; position:absolute; top:100%; right:0; left:0; z-index:6; flex-direction:column; gap:0; padding:8px 19px 12px; border-bottom:1px solid var(--line); background:var(--surface); }
+      #gfg-statement-preview .hero { padding-top:27px; }
+      #gfg-statement-preview .scope { display:block; }
+      #gfg-statement-preview .scope-tag { display:block; margin-top:8px; }
+      #gfg-statement-preview .company-context { grid-template-columns:1fr; gap:7px; }
+      #gfg-statement-preview .metrics { grid-template-columns:1fr; }
+      #gfg-statement-preview .metric, #gfg-statement-preview .metric + .metric { padding:11px 0; border-left:0; }
+      #gfg-statement-preview .metric + .metric { border-top:1px solid var(--line); }
+      #gfg-statement-preview .statement-tabs { gap:15px; overflow-x:auto; }
+      #gfg-statement-preview .statement-tab { flex:0 0 auto; font-size:12px; }
+      #gfg-statement-preview .section-heading, #gfg-statement-preview .ratio-intro { display:block; }
+      #gfg-statement-preview .source-link { display:inline-block; margin-top:8px; }
+      #gfg-statement-preview details.ratio summary { grid-template-columns:minmax(120px,1fr) 66px 66px 68px; gap:6px; font-size:11px; }
+      #gfg-statement-preview .ratio-name { font-size:11px; }
+      #gfg-statement-preview .ratio-formula { font-size:9px; }
+      #gfg-statement-preview .preview-focus { grid-template-columns:1fr; gap:16px; }
+      #gfg-statement-preview .kam-map { grid-template-columns:1fr; }
+    }
+  </style>
+  <main class="page" id="statements" aria-label="GFG consolidated financial statement analysis">
+    <header class="topbar">
+      <a class="wordmark" href="index.html"><span class="mark">MY</span><span>Muhammed Yousuf<small>Accounting · Audit · Analytics</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Main navigation"><a href="index.html#about">About</a><a href="case-study.html">Featured project</a><a aria-current="page" href="statement-analysis.html">Statement analysis</a><a href="methodology.html">Methodology</a><a href="evidence.html">Evidence</a></nav>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">Project 01 · Financial statement analysis</p>
+      <h1>Global Fashion Group S.A.</h1>
+      <p class="lede">A public-source analysis of what changed in FY2025, what may explain the movements, and what evidence an auditor might seek next.</p>
+      <div class="scope">
+        <div><strong>Consolidated Group statements · €m unless stated</strong><p>FY2024 comparisons use figures as presented in the FY2025 report. The cash-flow statement includes both continuing and discontinued operations.</p></div>
+        <span class="scope-tag">PUBLIC-SOURCE ANALYSIS</span>
+      </div>
+    </section>
+    <section class="company-context" aria-labelledby="company-context-heading">
+      <h2 id="company-context-heading">Company context</h2>
+      <div>
+        <p>Global Fashion Group is an online fashion and lifestyle group operating Dafiti, ZALORA and THE ICONIC across Latin America, Southeast Asia, Australia and New Zealand.</p>
+        <p>Its business and reporting make revenue, product mix, inventory, returns and currency useful areas to examine. Chile was classified as a discontinued operation in FY2025. The profit-or-loss comparison follows the FY2025 report’s continuing-operations presentation, while the cash-flow statement includes both continuing and discontinued operations.</p>
+      </div>
+    </section>
+    <section class="preview-focus" aria-label="How this extension fits the project">
+      <div><strong>Later statement-analysis extension</strong><p>Prepared after the separate KAM comparison, using the published FY2025 report.</p></div>
+      <div><strong>Original firewall preserved</strong><p>The original pre-KAM risk assessment remains frozen and unchanged.</p></div>
+      <div><strong>What the measures mean</strong><p>Ratios are screening indicators that lead to questions; they do not prove a misstatement or reproduce audit work.</p></div>
+    </section>
+    <section class="metrics" aria-label="Selected movements">
+      <div class="metric"><span class="metric-label">Reported revenue · FY2025</span><span class="metric-value">€679.8m</span><span class="metric-note">€42.8m lower than FY2024 (€722.6m) · −5.9% from reported euro figures</span></div>
+      <div class="metric"><span class="metric-label">Gross margin · calculated</span><span class="metric-value">46.4%</span><span class="metric-note">44.9% in FY2024 · up 1.5 percentage points</span></div>
+      <div class="metric"><span class="metric-label">Continuing-operations loss</span><span class="metric-value">€55.7m</span><span class="metric-note">€77.9m in FY2024 · loss narrowed by €22.2m</span></div>
+    </section>
+    <div class="statement-tabs" role="tablist" aria-label="Financial statements">
+      <button class="statement-tab" id="tab-pl" type="button" role="tab" aria-controls="panel-pl" aria-selected="true" tabindex="0" data-tab="pl">Profit or loss</button>
+      <button class="statement-tab" id="tab-oci" type="button" role="tab" aria-controls="panel-oci" aria-selected="false" tabindex="-1" data-tab="oci">Comprehensive income</button>
+      <button class="statement-tab" id="tab-bs" type="button" role="tab" aria-controls="panel-bs" aria-selected="false" tabindex="-1" data-tab="bs">Financial position</button>
+      <button class="statement-tab" id="tab-eq" type="button" role="tab" aria-controls="panel-eq" aria-selected="false" tabindex="-1" data-tab="eq">Changes in equity</button>
+      <button class="statement-tab" id="tab-cf" type="button" role="tab" aria-controls="panel-cf" aria-selected="false" tabindex="-1" data-tab="cf">Cash flows</button>
+    </div>
+    <section class="panel" id="panel-pl" role="tabpanel" aria-labelledby="tab-pl" aria-live="polite">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 · Income statement</p><h2>Consolidated statement of profit or loss</h2><p class="caption">FY2024 comparative and FY2025 · continuing operations, with discontinued operations shown separately</p></div>
+        <a class="source-link" href="https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline" target="_blank" rel="noopener">Open Annual Report ↗</a>
+      </div>
+      <div class="statement-grid">
+        <div>
+          <div class="table-wrap">
+            <table aria-label="GFG consolidated statement of profit or loss comparison">
+              <thead><tr><th scope="col">Statement line · €m</th><th scope="col">FY2024</th><th scope="col">FY2025</th><th scope="col">Movement</th></tr></thead>
+              <tbody>
+                <tr class="total"><td>Revenue</td><td>722.6</td><td>679.8</td><td>(42.8)</td></tr>
+                <tr><td>Cost of sales</td><td>(398.2)</td><td>(364.3)</td><td>33.9</td></tr>
+                <tr class="total"><td>Gross profit</td><td>324.4</td><td>315.5</td><td>(8.9)</td></tr>
+                <tr class="subhead"><td colspan="4">Operating expenses / income</td></tr>
+                <tr><td>Selling and distribution expenses</td><td>(240.2)</td><td>(215.8)</td><td>24.4</td></tr>
+                <tr><td>Administrative expenses</td><td>(161.2)</td><td>(143.4)</td><td>17.8</td></tr>
+                <tr><td>Other operating income</td><td>8.8</td><td>9.0</td><td>0.2</td></tr>
+                <tr><td>Other operating expenses</td><td>(4.1)</td><td>(4.9)</td><td>(0.8)</td></tr>
+                <tr><td>Net impairment losses on financial assets</td><td>(0.3)</td><td>—</td><td>0.3</td></tr>
+                <tr><td>Impairment of non-financial assets</td><td>(2.3)</td><td>(0.4)</td><td>1.9</td></tr>
+                <tr class="total"><td>Loss before interest and tax (EBIT)</td><td>(74.9)</td><td>(40.0)</td><td>34.9</td></tr>
+                <tr><td>Gain on repurchase of convertible bonds</td><td>12.3</td><td>—</td><td>(12.3)</td></tr>
+                <tr><td>Finance income</td><td>9.9</td><td>3.6</td><td>(6.3)</td></tr>
+                <tr><td>Finance costs</td><td>(18.6)</td><td>(19.2)</td><td>(0.6)</td></tr>
+                <tr class="total"><td>Loss before tax · continuing operations</td><td>(71.3)</td><td>(55.6)</td><td>15.7</td></tr>
+                <tr><td>Income tax expense</td><td>(6.6)</td><td>(0.1)</td><td>6.5</td></tr>
+                <tr class="total"><td>Loss · continuing operations</td><td>(77.9)</td><td>(55.7)</td><td>22.2</td></tr>
+                <tr><td>Net loss · discontinued operations</td><td>(7.2)</td><td>(6.5)</td><td>0.7</td></tr>
+                <tr class="total"><td>Loss for the year</td><td>(85.1)</td><td>(62.2)</td><td>22.9</td></tr>
+                <tr><td>Attributable to equity holders of the parent</td><td>(82.5)</td><td>(60.3)</td><td>22.2</td></tr>
+                <tr><td>Attributable to non-controlling interests</td><td>(2.6)</td><td>(1.9)</td><td>0.7</td></tr>
+                <tr><td>Loss per share (€)</td><td>(0.4)</td><td>(0.3)</td><td>0.1</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Movement = FY2025 less FY2024. For expense and loss lines, a positive movement means the amount became smaller. Figures follow the report’s rounding.</p>
+        </div>
+        <aside class="analysis">
+          <p class="eyebrow">How to read this</p>
+          <h3>Revenue fell in euros; the constant-currency movement was smaller.</h3>
+          <p><strong>Reported:</strong> €679.8m versus €722.6m, a calculated 5.9% decline in reported euros.</p>
+          <p><strong>Company measure:</strong> GFG reported a 0.6% decline on a constant-currency basis. The two figures use different bases.</p>
+          <p><strong>Question:</strong> What portion of the gap reflects currency translation, and how do regional trends reconcile to Group revenue?</p>
+          <p><strong>Evidence needed:</strong> currency and regional bridge, sales records, returns and year-end cut-off support. Public totals cannot establish these.</p>
+        </aside>
+      </div>
+      <section class="ratio-section" aria-labelledby="ratio-heading">
+        <div class="ratio-intro"><div><p class="eyebrow">02 · Ratios and analysis</p><h2 id="ratio-heading">What do the movements add up to?</h2></div><p>Each ratio shows its formula, calculation, interpretation and a question to investigate.</p></div>
+        <div class="ratio-header" aria-hidden="true"><span>Measure</span><span>FY2024</span><span>FY2025</span><span>Change · unit</span></div>
+        <div class="ratio-list">
+          <details class="ratio" open>
+            <summary><span class="ratio-name">Gross profit margin<span class="ratio-formula">Gross profit ÷ revenue</span></span><span class="ratio-number">44.9%</span><span class="ratio-number">46.4%</span><span class="ratio-number ratio-change">+1.5 pp</span></summary>
+            <div class="ratio-body"><p><strong>Calculation:</strong> FY2024 €324.4m ÷ €722.6m = 44.9%; FY2025 €315.5m ÷ €679.8m = 46.4%.</p><p><strong>Analysis:</strong> Gross profit fell by €8.9m even as the margin rose. GFG attributes the margin increase to a healthier inventory profile and a shift towards Marketplace and Platform Services.</p><p><strong>Audit question:</strong> What do sales mix, markdowns and inventory evidence show about the change? Public totals cannot test item-level costing or net realisable value.</p></div>
+          </details>
+          <details class="ratio" open>
+            <summary><span class="ratio-name">EBIT margin<span class="ratio-formula">EBIT ÷ revenue</span></span><span class="ratio-number">−10.4%</span><span class="ratio-number">−5.9%</span><span class="ratio-number ratio-change">+4.5 pp</span></summary>
+            <div class="ratio-body"><p><strong>Calculation:</strong> FY2024 −€74.9m ÷ €722.6m = −10.4%; FY2025 −€40.0m ÷ €679.8m = −5.9%.</p><p><strong>Analysis:</strong> The operating loss narrowed, but EBIT remained negative. Lower selling and administrative expenses helped offset lower gross profit.</p><p><strong>Audit question:</strong> Are cost movements complete, correctly classified and comparable across the restated periods?</p></div>
+          </details>
+          <details class="ratio" open>
+            <summary><span class="ratio-name">Continuing-operations loss margin<span class="ratio-formula">Continuing-operations loss ÷ revenue</span></span><span class="ratio-number">−10.8%</span><span class="ratio-number">−8.2%</span><span class="ratio-number ratio-change">+2.6 pp</span></summary>
+            <div class="ratio-body"><p><strong>Calculation:</strong> FY2024 −€77.9m ÷ €722.6m; FY2025 −€55.7m ÷ €679.8m.</p><p><strong>Analysis:</strong> The continuing-operations loss narrowed by €22.2m, or 28.5% of the FY2024 loss. It remains a loss, so this is not described as profit growth.</p><p><strong>Audit question:</strong> How do operating movements, finance items and tax affect the change in the continuing-operations result?</p></div>
+          </details>
+          <details class="ratio" open>
+            <summary><span class="ratio-name">Selling and administrative costs / revenue<span class="ratio-formula">(Selling + administrative expenses) ÷ revenue</span></span><span class="ratio-number">55.5%</span><span class="ratio-number">52.8%</span><span class="ratio-number ratio-change">−2.7 pp</span></summary>
+            <div class="ratio-body"><p><strong>Calculation:</strong> FY2024 (€240.2m + €161.2m) ÷ €722.6m = 55.5%; FY2025 (€215.8m + €143.4m) ÷ €679.8m = 52.8%.</p><p><strong>Analysis:</strong> These costs fell relative to revenue. The ratio does not by itself explain whether the movement came from efficiency, activity, currency, business mix or classification.</p><p><strong>Audit question:</strong> What do like-for-like cost records and expense samples show about completeness and cut-off?</p></div>
+          </details>
+          <details class="ratio" open>
+            <summary><span class="ratio-name">Employee benefit costs / revenue<span class="ratio-formula">Employee benefit expenses ÷ revenue</span></span><span class="ratio-number">20.1%</span><span class="ratio-number">19.4%</span><span class="ratio-number ratio-change">−0.6 pp</span></summary>
+            <div class="ratio-body"><p><strong>Calculation:</strong> FY2024 €145.0m ÷ €722.6m = 20.1%; FY2025 €132.1m ÷ €679.8m = 19.4%.</p><p><strong>Analysis:</strong> The report’s employee benefit total includes share-based payment. This is a cost trend, not a standalone measure of workforce productivity.</p><p><strong>Audit question:</strong> Do payroll, accrual and share-based payment records support the expense and period allocation?</p></div>
+          </details>
+          <details class="ratio" open>
+            <summary><span class="ratio-name">Adjusted EBITDA margin · GFG APM<span class="ratio-formula">GFG-defined Adjusted EBITDA ÷ revenue</span></span><span class="ratio-number">−2.4%</span><span class="ratio-number">1.4%</span><span class="ratio-number ratio-change">+3.8 pp</span></summary>
+            <div class="ratio-body"><p><strong>Calculation:</strong> FY2024 −€17.6m ÷ €722.6m = −2.4%; FY2025 €9.3m ÷ €679.8m = 1.4%.</p><p><strong>Analysis:</strong> GFG’s adjusted measure moved above zero. It is a company-defined, non-IFRS measure and is kept separate from the audited statement.</p><p><strong>Audit question:</strong> How do the exclusions and adjustments reconcile to reported EBIT and EBITDA?</p></div>
+          </details>
+        </div>
+        <p class="minor-note">The cost-of-sales ratio is the complement of gross margin here, so it is a supporting calculation rather than another headline. Contribution margin, budget variance and break-even ratios need internal cost breakdowns or budgets that are not in the public report. Changes use percentage points (pp) for margins and coverage rates, x for liquidity multiples, percent for relative balance movements and €m for cash amounts.</p>
+      </section>
+      <section class="question-row" aria-label="Links across the statements">
+        <article><p class="eyebrow">Cross-statement link</p><h3>Revenue and returns</h3><p>Connect reported revenue to receivables, refund liabilities, customer returns and cash receipts.</p></article>
+        <article><p class="eyebrow">Cross-statement link</p><h3>Margin and inventory</h3><p>Read gross margin alongside inventory balances, provisions, markdowns and net realisable value.</p></article>
+        <article><p class="eyebrow">Cross-statement link</p><h3>Loss and cash generation</h3><p>Compare the reported result with operating cash flow, working capital and capital expenditure.</p></article>
+      </section>
+    </section>
+    <section class="panel" id="panel-oci" role="tabpanel" aria-labelledby="tab-oci" aria-live="polite" hidden>
+      <div class="section-heading"><div><p class="eyebrow">02 · Comprehensive income</p><h2>Consolidated statement of comprehensive income</h2><p class="caption">For the year ended 31 December · €m</p></div><a class="source-link" href="https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline" target="_blank" rel="noopener">Open Annual Report ↗</a></div>
+      <div class="statement-grid">
+        <div class="table-wrap">
+          <table aria-label="GFG consolidated statement of comprehensive income">
+            <thead><tr><th scope="col">Statement line · €m</th><th scope="col">FY2024</th><th scope="col">FY2025</th></tr></thead>
+            <tbody>
+              <tr class="total"><td>Loss for the year</td><td>(85.1)</td><td>(62.2)</td></tr>
+              <tr class="subhead"><td colspan="3">Other comprehensive income</td></tr>
+              <tr><td>Exchange differences on translation from continuing operations</td><td>0.1</td><td>3.1</td></tr>
+              <tr class="total"><td>Net other comprehensive income for the year</td><td>0.1</td><td>3.1</td></tr>
+              <tr class="total"><td>Total comprehensive loss for the year</td><td>(85.0)</td><td>(59.1)</td></tr>
+              <tr class="subhead"><td colspan="3">Attributable to</td></tr>
+              <tr><td>Equity holders of the parent</td><td>(82.2)</td><td>(57.9)</td></tr>
+              <tr><td>Non-controlling interests</td><td>(2.8)</td><td>(1.2)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="analysis">
+          <p class="eyebrow">What stands out</p>
+          <h3>Translation gains reduced the total comprehensive loss.</h3>
+          <p><strong>FY2025:</strong> the €62.2m loss for the year was partly offset by €3.1m of other comprehensive income, producing a €59.1m total comprehensive loss.</p>
+          <p><strong>Interpretation:</strong> the translation movement sits in other comprehensive income and the foreign-currency reserve; it is not revenue or operating profit.</p>
+          <p><strong>Question:</strong> Do translation movements reconcile to the foreign-currency reserve and the Group’s currency exposures?</p>
+          <p class="minor-note">No separate ratio is calculated for comprehensive income. The useful analysis is the absolute OCI movement and its reconciliation to the foreign-currency translation reserve in the changes-in-equity statement.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="panel" id="panel-bs" role="tabpanel" aria-labelledby="tab-bs" aria-live="polite" hidden>
+      <div class="section-heading"><div><p class="eyebrow">03 · Balance sheet</p><h2>Consolidated statement of financial position</h2><p class="caption">At 31 December · €m · FY2024 and FY2025 report comparative</p></div><a class="source-link" href="https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline" target="_blank" rel="noopener">Open Annual Report ↗</a></div>
+      <div class="metrics">
+        <div class="metric"><span class="metric-label">Net inventory · reported</span><span class="metric-value">€96.4m → €81.9m</span><span class="metric-note">FY2024 to FY2025 · down €14.5m (15.0%)</span></div>
+        <div class="metric"><span class="metric-label">Current ratio · calculated</span><span class="metric-value">1.32x → 1.06x</span><span class="metric-note">Current assets ÷ current liabilities</span></div>
+        <div class="metric"><span class="metric-label">Total equity · reported</span><span class="metric-value">€211.2m → €155.6m</span><span class="metric-note">Down €55.6m during FY2025</span></div>
+      </div>
+      <div class="statement-grid">
+        <div class="table-wrap">
+          <table aria-label="GFG consolidated statement of financial position">
+            <thead><tr><th scope="col">Statement line · €m</th><th scope="col">FY2024</th><th scope="col">FY2025</th></tr></thead>
+            <tbody>
+              <tr class="subhead"><td colspan="3">Assets</td></tr>
+              <tr class="subhead"><td colspan="3">Non-current assets</td></tr>
+              <tr><td>Property, plant and equipment</td><td>42.0</td><td>33.8</td></tr>
+              <tr><td>Right-of-use assets</td><td>36.8</td><td>40.2</td></tr>
+              <tr><td>Goodwill</td><td>54.3</td><td>51.6</td></tr>
+              <tr><td>Other intangible assets</td><td>71.7</td><td>56.0</td></tr>
+              <tr><td>Other financial assets</td><td>33.0</td><td>32.6</td></tr>
+              <tr class="total"><td>Total non-current assets</td><td>237.8</td><td>214.2</td></tr>
+              <tr class="subhead"><td colspan="3">Current assets</td></tr>
+              <tr><td>Inventories</td><td>96.4</td><td>81.9</td></tr>
+              <tr><td>Trade and other receivables</td><td>48.8</td><td>21.1</td></tr>
+              <tr><td>Other financial assets</td><td>20.8</td><td>15.3</td></tr>
+              <tr><td>Income tax receivables</td><td>2.3</td><td>3.6</td></tr>
+              <tr><td>Other non-financial assets</td><td>20.8</td><td>17.7</td></tr>
+              <tr><td>Cash and cash equivalents</td><td>210.6</td><td>176.5</td></tr>
+              <tr class="total"><td>Total current assets</td><td>399.7</td><td>316.1</td></tr>
+              <tr class="total"><td>Total assets</td><td>637.5</td><td>530.3</td></tr>
+              <tr class="subhead"><td colspan="3">Equity and liabilities</td></tr>
+              <tr><td>Common share capital</td><td>2.3</td><td>2.3</td></tr>
+              <tr><td>Share premium</td><td>303.6</td><td>303.6</td></tr>
+              <tr><td>Treasury shares</td><td>(7.5)</td><td>(7.5)</td></tr>
+              <tr><td>Capital reserves</td><td>2,102.1</td><td>2,102.1</td></tr>
+              <tr><td>Other reserves</td><td>42.2</td><td>44.0</td></tr>
+              <tr><td>Share-based payment reserves</td><td>158.6</td><td>160.5</td></tr>
+              <tr><td>Convertible bond equity component</td><td>7.1</td><td>5.3</td></tr>
+              <tr><td>Accumulated deficit</td><td>(2,406.2)</td><td>(2,468.4)</td></tr>
+              <tr><td>Foreign currency translation reserve</td><td>11.5</td><td>14.6</td></tr>
+              <tr><td>Equity attributable to parent holders</td><td>213.7</td><td>156.5</td></tr>
+              <tr><td>Non-controlling interests</td><td>(2.5)</td><td>(0.9)</td></tr>
+              <tr class="total"><td>Total equity</td><td>211.2</td><td>155.6</td></tr>
+              <tr class="subhead"><td colspan="3">Non-current liabilities</td></tr>
+              <tr><td>Lease liabilities</td><td>32.0</td><td>35.1</td></tr>
+              <tr><td>Convertible bond liabilities</td><td>48.6</td><td>—</td></tr>
+              <tr><td>Provisions</td><td>4.7</td><td>4.9</td></tr>
+              <tr><td>Deferred tax liabilities</td><td>5.7</td><td>4.6</td></tr>
+              <tr><td>Non-financial liabilities</td><td>31.4</td><td>31.1</td></tr>
+              <tr class="total"><td>Total non-current liabilities</td><td>122.4</td><td>75.7</td></tr>
+              <tr class="subhead"><td colspan="3">Current liabilities</td></tr>
+              <tr><td>Borrowings</td><td>3.6</td><td>1.0</td></tr>
+              <tr><td>Lease liabilities</td><td>16.1</td><td>14.1</td></tr>
+              <tr><td>Trade payables and other financial liabilities</td><td>201.3</td><td>184.3</td></tr>
+              <tr><td>Convertible bond liabilities</td><td>2.7</td><td>40.4</td></tr>
+              <tr><td>Provisions</td><td>11.5</td><td>9.5</td></tr>
+              <tr><td>Income tax liabilities</td><td>15.2</td><td>10.6</td></tr>
+              <tr><td>Non-financial liabilities</td><td>53.5</td><td>39.1</td></tr>
+              <tr class="total"><td>Total current liabilities</td><td>303.9</td><td>299.0</td></tr>
+              <tr class="total"><td>Total liabilities</td><td>426.3</td><td>374.7</td></tr>
+              <tr class="total"><td>Total equity and liabilities</td><td>637.5</td><td>530.3</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="analysis">
+          <p class="eyebrow">What stands out</p>
+          <h3>Inventory fell, while the short-term liquidity buffer narrowed.</h3>
+          <p><strong>Inventory:</strong> fell by €14.5m, or 15.0%. GFG links its improved gross margin to a healthier inventory profile, but the totals alone cannot validate valuation or provisions.</p>
+          <p><strong>Liquidity:</strong> the current ratio fell from 1.32 to 1.06. It remains above 1, but this simple measure does not explain timing, restrictions, or the nature of current liabilities.</p>
+          <p><strong>Further evidence:</strong> inventory ageing and subsequent sales; receivables and factoring support; cash restrictions; and the bond maturity and repayment terms.</p>
+        </aside>
+      </div>
+      <section class="ratio-section" aria-labelledby="bs-ratios-heading">
+        <div class="ratio-intro"><div><p class="eyebrow">Balance-sheet ratios</p><h2 id="bs-ratios-heading">Liquidity and inventory</h2></div><p>These are simple calculations from reported year-end balances, not conclusions about balance quality.</p></div>
+        <div class="ratio-header" aria-hidden="true"><span>Measure</span><span>FY2024</span><span>FY2025</span><span>Change · unit</span></div>
+        <div class="ratio-list">
+          <details class="ratio" open><summary><span class="ratio-name">Current ratio<span class="ratio-formula">Current assets ÷ current liabilities</span></span><span class="ratio-number">1.32x</span><span class="ratio-number">1.06x</span><span class="ratio-number ratio-change">−0.26x</span></summary><div class="ratio-body"><p><strong>Calculation:</strong> €399.7m ÷ €303.9m = 1.32x; €316.1m ÷ €299.0m = 1.06x.</p><p><strong>Analysis:</strong> Current assets still exceed current liabilities, but the coverage narrowed. The ratio does not show when balances fall due or how readily assets convert to cash.</p><p><strong>Question:</strong> How do cash restrictions, supplier terms, factoring and the current bond balance affect liquidity?</p></div></details>
+          <details class="ratio" open><summary><span class="ratio-name">Quick ratio · simple proxy<span class="ratio-formula">(Current assets − inventory) ÷ current liabilities</span></span><span class="ratio-number">1.00x</span><span class="ratio-number">0.78x</span><span class="ratio-number ratio-change">−0.22x</span></summary><div class="ratio-body"><p><strong>Calculation:</strong> (€399.7m − €96.4m) ÷ €303.9m = 1.00x; (€316.1m − €81.9m) ÷ €299.0m = 0.78x.</p><p><strong>Analysis:</strong> Excluding inventory, year-end current assets are below current liabilities in FY2025. This simplified measure does not adjust for restricted cash or assess collectability.</p><p><strong>Question:</strong> What evidence supports cash availability and the timing and recoverability of receivables?</p></div></details>
+          <details class="ratio" open><summary><span class="ratio-name">Inventory movement<span class="ratio-formula">(FY2025 closing inventory − FY2024 closing inventory) ÷ FY2024 closing inventory</span></span><span class="ratio-number">€96.4m</span><span class="ratio-number">€81.9m</span><span class="ratio-number ratio-change">−15.0%</span></summary><div class="ratio-body"><p><strong>Calculation:</strong> (€81.9m − €96.4m) ÷ €96.4m = −15.0%.</p><p><strong>Analysis:</strong> Closing inventory declined faster than reported revenue, but this comparison alone cannot separate volume, product mix, currency, markdowns or disposals.</p><p><strong>Question:</strong> Do ageing, post-year-end sales, costing and net realisable value evidence support the closing balance?</p></div></details>
+          <details class="ratio" open><summary><span class="ratio-name">Inventory provision coverage<span class="ratio-formula">Inventory provision ÷ gross finished goods and merchandise</span></span><span class="ratio-number">8.84%</span><span class="ratio-number">8.04%</span><span class="ratio-number ratio-change">−0.80 pp</span></summary><div class="ratio-body"><p><strong>Calculation:</strong> FY2024 €9.3m ÷ €105.2m = 8.84%; FY2025 €7.1m ÷ €88.3m = 8.04%.</p><p><strong>Analysis:</strong> The provision amount and gross merchandise balance both fell; the provision rate fell by about 0.80 percentage points. This is a screening comparison, not proof that the allowance is sufficient or insufficient.</p><p><strong>Question:</strong> How do ageing, sell-through, markdowns and subsequent sales support the allowance for slow-moving or obsolete goods?</p></div></details>
+          <details class="ratio" open><summary><span class="ratio-name">Goodwill and intangibles / total assets<span class="ratio-formula">(Goodwill + other intangible assets) ÷ total assets</span></span><span class="ratio-number">19.8%</span><span class="ratio-number">20.3%</span><span class="ratio-number ratio-change">+0.5 pp</span></summary><div class="ratio-body"><p><strong>Calculation:</strong> FY2024 (€54.3m + €71.7m) ÷ €637.5m = 19.8%; FY2025 (€51.6m + €56.0m) ÷ €530.3m = 20.3%.</p><p><strong>Analysis:</strong> The combined carrying amount fell from €126.0m to €107.6m, while its share of total assets edged up as total assets also contracted. This indicates exposure, not an impairment conclusion.</p><p><strong>Question:</strong> What do the CGU-specific forecast assumptions and disclosed headroom sensitivities show?</p></div></details>
+        </div>
+        <p class="minor-note">The quick ratio is a simplified proxy: it excludes inventory but does not remove prepaid or other less-liquid current assets. GFG’s own working-capital and cash measures use company definitions and should be shown separately. Refund liabilities were €12.3m in FY2024 and €10.8m in FY2025; the right-to-recover-returned-goods asset was €6.0m and €5.6m. These are year-end balances, not a returns rate. Tax positions should be reviewed through the relevant tax notes and liability movements; an effective tax rate is not a useful headline ratio for these loss-making periods.</p>
+      </section>
+    </section>
+    <section class="panel" id="panel-cf" role="tabpanel" aria-labelledby="tab-cf" aria-live="polite" hidden>
+      <div class="section-heading"><div><p class="eyebrow">05 · Cash flow</p><h2>Consolidated statement of cash flows</h2><p class="caption">For the year ended 31 December · €m · continuing and discontinued operations</p></div><a class="source-link" href="https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline" target="_blank" rel="noopener">Open Annual Report ↗</a></div>
+      <div class="metrics">
+        <div class="metric"><span class="metric-label">Operating cash flow · reported</span><span class="metric-value">€(15.0)m → €7.5m</span><span class="metric-note">FY2024 to FY2025 · positive in FY2025</span></div>
+        <div class="metric"><span class="metric-label">Investing cash flow · reported</span><span class="metric-value">€130.1m → €(9.8)m</span><span class="metric-note">FY2024 included €161.9m investment-fund redemption</span></div>
+        <div class="metric"><span class="metric-label">Closing cash · reported</span><span class="metric-value">€210.6m → €176.5m</span><span class="metric-note">FY2025 cash-flow statement includes both operation types</span></div>
+      </div>
+      <div class="statement-grid">
+        <div class="table-wrap">
+          <table aria-label="GFG consolidated statement of cash flows comparison">
+            <thead><tr><th scope="col">Statement line · €m</th><th scope="col">FY2024</th><th scope="col">FY2025</th></tr></thead>
+            <tbody>
+              <tr class="subhead"><td colspan="3">Cash flows from operating activities</td></tr>
+              <tr><td>Loss before tax · continuing operations</td><td>(71.3)</td><td>(55.6)</td></tr>
+              <tr><td>Loss before tax · discontinued operations</td><td>(7.2)</td><td>(6.5)</td></tr>
+              <tr class="total"><td>Loss before tax · total</td><td>(78.5)</td><td>(62.1)</td></tr>
+              <tr><td>Depreciation of property, plant and right-of-use assets</td><td>27.2</td><td>21.2</td></tr>
+              <tr><td>Amortisation of intangible assets</td><td>30.9</td><td>25.1</td></tr>
+              <tr><td>Impairment losses on non-financial assets</td><td>4.8</td><td>0.1</td></tr>
+              <tr><td>Impairment losses on other financial assets</td><td>0.3</td><td>—</td></tr>
+              <tr><td>Share-based payment expense / (income)</td><td>(0.7)</td><td>1.6</td></tr>
+              <tr><td>Right-of-use asset remeasurement</td><td>(0.6)</td><td>0.3</td></tr>
+              <tr><td>Fair value remeasurement</td><td>(0.8)</td><td>—</td></tr>
+              <tr><td>Interest income</td><td>(9.2)</td><td>(3.6)</td></tr>
+              <tr><td>Interest costs</td><td>13.1</td><td>11.0</td></tr>
+              <tr><td>Foreign currency loss</td><td>1.6</td><td>9.1</td></tr>
+              <tr><td>Other non-cash transactions</td><td>(0.9)</td><td>(3.0)</td></tr>
+              <tr><td>Gain / (loss) from disposal of PPE and intangibles</td><td>0.2</td><td>(0.5)</td></tr>
+              <tr><td>Loss from disposal of subsidiary</td><td>1.7</td><td>—</td></tr>
+              <tr><td>Gain on repurchase of convertible bonds</td><td>(12.3)</td><td>—</td></tr>
+              <tr><td>Changes in provisions</td><td>(5.2)</td><td>(0.3)</td></tr>
+              <tr class="total"><td>Cash from operations before working capital</td><td>(28.4)</td><td>(1.1)</td></tr>
+              <tr><td>Decrease in inventories</td><td>10.4</td><td>9.4</td></tr>
+              <tr><td>Decrease / (increase) in trade receivables</td><td>(12.9)</td><td>26.7</td></tr>
+              <tr><td>(Decrease) / increase in trade payables</td><td>23.5</td><td>(19.2)</td></tr>
+              <tr><td>Changes in other receivables and payables</td><td>1.7</td><td>3.0</td></tr>
+              <tr class="total"><td>Cash flows from / (used in) operations</td><td>(5.7)</td><td>18.8</td></tr>
+              <tr><td>Income tax paid</td><td>(10.9)</td><td>(7.5)</td></tr>
+              <tr><td>Interest received</td><td>9.1</td><td>3.6</td></tr>
+              <tr><td>Interest paid</td><td>(7.5)</td><td>(7.4)</td></tr>
+              <tr class="total"><td>Net cash from / (used in) operating activities</td><td>(15.0)</td><td>7.5</td></tr>
+              <tr class="subhead"><td colspan="3">Cash flows from investing activities</td></tr>
+              <tr><td>Purchase of property, plant and equipment</td><td>(3.9)</td><td>(1.7)</td></tr>
+              <tr><td>Proceeds from sale of property, plant and equipment</td><td>—</td><td>0.9</td></tr>
+              <tr><td>Intangible assets and capitalised development expenditure</td><td>(25.7)</td><td>(12.3)</td></tr>
+              <tr><td>Other securities, deposits and restricted cash movements</td><td>(2.2)</td><td>3.3</td></tr>
+              <tr><td>Redemption of investment funds</td><td>161.9</td><td>—</td></tr>
+              <tr class="total"><td>Net cash from / (used in) investing activities</td><td>130.1</td><td>(9.8)</td></tr>
+              <tr class="subhead"><td colspan="3">Cash flows from financing activities</td></tr>
+              <tr><td>Proceeds from borrowings and other financial liabilities</td><td>66.2</td><td>9.1</td></tr>
+              <tr><td>Repayment of borrowings</td><td>(74.5)</td><td>(9.5)</td></tr>
+              <tr><td>Coupon payments on convertible bonds</td><td>(1.5)</td><td>(0.6)</td></tr>
+              <tr><td>Repurchase of convertible bonds</td><td>(104.3)</td><td>(13.3)</td></tr>
+              <tr><td>Payments under lease liabilities</td><td>(16.5)</td><td>(15.5)</td></tr>
+              <tr class="total"><td>Net cash used in financing activities</td><td>(130.6)</td><td>(29.8)</td></tr>
+              <tr><td>Cash and cash equivalents at beginning of year</td><td>225.9</td><td>210.6</td></tr>
+              <tr><td>Effect of exchange-rate changes</td><td>0.2</td><td>(2.0)</td></tr>
+              <tr class="total"><td>Cash and cash equivalents at end of year</td><td>210.6</td><td>176.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="analysis">
+          <p class="eyebrow">How cash moved</p>
+          <h3>Operating cash flow improved, while reported cash declined.</h3>
+          <p><strong>Operating activities:</strong> moved from a €15.0m outflow to a €7.5m inflow. Lower losses and a €26.7m decrease in trade receivables contributed to the FY2025 reconciliation.</p>
+          <p><strong>Investing activities:</strong> FY2024 included €161.9m from redemption of investment funds. FY2025 had no equivalent inflow and included €14.0m of purchases of PPE and intangible assets.</p>
+          <p><strong>Financing:</strong> bond repurchases were €13.3m in FY2025 versus €104.3m in FY2024. These are cash-flow movements, not recurring operating costs.</p>
+          <p><strong>Perimeter:</strong> the cash-flow statement includes continuing and discontinued operations, unlike the continuing-operations headline metrics.</p>
+        </aside>
+      </div>
+      <section class="ratio-section" aria-labelledby="cf-ratios-heading">
+        <div class="ratio-intro"><div><p class="eyebrow">Cash-flow analysis</p><h2 id="cf-ratios-heading">Cash movements and reconciliation</h2></div><p>Cash flows are shown as movements, not forced into a margin ratio with a different reporting perimeter.</p></div>
+        <div class="ratio-header" aria-hidden="true"><span>Measure</span><span>FY2024</span><span>FY2025</span><span>Change · unit</span></div>
+        <div class="ratio-list">
+          <details class="ratio" open><summary><span class="ratio-name">Closing cash and cash movement bridge<span class="ratio-formula">Opening cash + operating + investing + financing + FX = closing cash</span></span><span class="ratio-number">€210.6m</span><span class="ratio-number">€176.5m</span><span class="ratio-number ratio-change">−€34.1m</span></summary><div class="ratio-body"><p><strong>FY2024:</strong> €225.9m − €15.0m + €130.1m − €130.6m + €0.2m FX = €210.6m.</p><p><strong>FY2025:</strong> €210.6m + €7.5m − €9.8m − €29.8m − €2.0m FX = €176.5m.</p><p><strong>Analysis:</strong> Operating cash flow improved, but investing and financing outflows and currency movements reduced closing cash. FY2024 investing inflows included €161.9m from investment-fund redemptions.</p><p><strong>Question:</strong> Can significant cash, investment-fund and financing movements be traced to bank and counterparty records in a real engagement?</p></div></details>
+        </div>
+        <p class="minor-note"><strong>No operating cash-flow margin is presented:</strong> the consolidated cash-flow statement includes continuing and discontinued operations, while the main revenue series is continuing operations. GFG’s Normalised Free Cash Flow and capital expenditure are company-defined measures; they should be shown separately with their definitions, not substituted for the IFRS cash-flow statement.</p>
+      </section>
+    </section>
+    <section class="panel" id="panel-eq" role="tabpanel" aria-labelledby="tab-eq" aria-live="polite" hidden>
+      <div class="section-heading"><div><p class="eyebrow">04 · Changes in equity</p><h2>Consolidated statement of changes in equity</h2><p class="caption">Selected total-equity movement summary · €m; full component rollforward is in the linked report</p></div><a class="source-link" href="https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline" target="_blank" rel="noopener">Open Annual Report ↗</a></div>
+      <div class="metrics">
+        <div class="metric"><span class="metric-label">Opening total equity · FY2025</span><span class="metric-value">€211.2m</span><span class="metric-note">Closing balance at 31 December 2024</span></div>
+        <div class="metric"><span class="metric-label">Loss for FY2025</span><span class="metric-value">€(62.2)m</span><span class="metric-note">Main reduction in total equity</span></div>
+        <div class="metric"><span class="metric-label">Closing total equity · FY2025</span><span class="metric-value">€155.6m</span><span class="metric-note">FY2024 closing total equity: €211.2m</span></div>
+      </div>
+      <div class="statement-grid">
+        <div class="table-wrap">
+          <table aria-label="GFG total equity movement for FY2024 and FY2025">
+            <thead><tr><th scope="col">Movement · €m</th><th scope="col">FY2024</th><th scope="col">FY2025</th></tr></thead>
+            <tbody>
+              <tr class="total"><td>Total equity at start of year</td><td>295.7</td><td>211.2</td></tr>
+              <tr><td>Loss for the year</td><td>(85.1)</td><td>(62.2)</td></tr>
+              <tr><td>Other comprehensive income / (loss)</td><td>0.1</td><td>3.1</td></tr>
+              <tr><td>Share-based payment expenses</td><td>0.7</td><td>1.9</td></tr>
+              <tr><td>Hyperinflation adjustment</td><td>(0.6)</td><td>—</td></tr>
+              <tr><td>Disposal of business</td><td>0.4</td><td>—</td></tr>
+              <tr><td>Change in non-controlling shareholders</td><td>—</td><td>1.6</td></tr>
+              <tr><td>Net total-equity effect of bond reclassification</td><td>0.0</td><td>0.0</td></tr>
+              <tr class="total"><td>Total equity at end of year</td><td>211.2</td><td>155.6</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">The bond repurchase entries shown in the report move amounts between equity components and do not change total equity. Totals may reflect rounding.</p>
+        </div>
+        <aside class="analysis">
+          <p class="eyebrow">How to read this</p>
+          <h3>The FY2025 loss was partly offset by currency translation and other equity movements.</h3>
+          <p><strong>Movement:</strong> total equity declined by €55.6m, from €211.2m to €155.6m. The €62.2m loss was partly offset by €3.1m of other comprehensive income, €1.9m of share-based payment expenses and a €1.6m movement in non-controlling interests.</p>
+          <p><strong>Analysis focus:</strong> connect the statement to the loss and OCI statements, then trace material changes in ownership, reserves and convertible-bond components to the relevant notes.</p>
+          <p><strong>Evidence boundary:</strong> this bridge explains the reported movement; it does not test the underlying transactions or valuations.</p>
+          <p class="minor-note">No standalone ratio is used for changes in equity: this statement reconciles movements between opening and closing balances. Component balances appear in the financial-position statement; the linked report contains the full reserve-by-reserve rollforward.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="section-heading" id="kam-extension" aria-labelledby="kam-extension-heading"><div><p class="eyebrow">Separate comparison · post-KAM extension</p><h2 id="kam-extension-heading">How the statement analysis connects to the published KAM themes</h2><p class="caption">This mapping is a later comparison aid. It does not alter the original risk assessment or imply endorsement by EY.</p></div><a class="source-link" href="https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline" target="_blank" rel="noopener">Read the auditor’s report ↗</a></section>
+    <section class="preview-focus kam-map" aria-label="Statement analysis mapped to published KAM themes">
+      <div><strong>Revenue recognition and returns</strong><p>Profit or loss: revenue movement and margins. Financial position: refund liabilities and the right-to-recover-returned-goods asset. Cash flows: receivable and cash-receipt trends. Public totals cannot test order-level occurrence, cut-off or return estimates.</p></div>
+      <div><strong>Inventories and inventory allowances</strong><p>Profit or loss: cost of sales and gross margin. Financial position: inventory movement and provision coverage. Cash flows: inventory working-capital movement. Item-level ageing, sell-through and NRV evidence would be needed in an audit.</p></div>
+      <div><strong>Goodwill and other intangible impairment</strong><p>Profit or loss: impairment and amortisation. Financial position: carrying amounts and asset concentration. Cash-flow forecasts and disclosed sensitivity assumptions provide context; public ratios cannot validate a CGU model.</p></div>
+      <div><strong>Income and indirect-tax contingencies and tax positions</strong><p>Profit or loss: tax expense. Financial position: tax-related assets, liabilities and provisions. Cash flows: income taxes paid. The analysis follows the relevant notes and movements rather than forcing an effective tax rate.</p></div>
+    </section>
+    <p class="minor-note">The auditor describes KAMs as matters addressed in the audit of the financial statements as a whole, not as separate opinions. The thematic mapping does not show that this project detected a misstatement, reproduce the auditor’s procedures or assess audit quality. <a href="case-study.html#kam">See the original firewall and independent-risk baseline</a>.</p>
+    <section class="method-strip" aria-label="Analysis workflow"><strong>How I checked the work</strong><span class="method-step"><b>AI</b> organise public disclosures and suggest questions</span><span class="separator">→</span><span class="method-step"><b>Python + Excel</b> recalculate selected figures</span><span class="separator">→</span><span class="method-step"><b>Human judgement</b> interpret and decide what needs evidence</span></section>
+    <p class="footer-note">Educational analysis of public information. No GFG ledgers or transaction records were accessed, no audit procedures were performed, and no audit opinion is expressed. This page is a later statement-analysis extension; the original pre-KAM risk assessment remains unchanged.</p>
+  </main>
+  <footer class="footer-note"><a href="case-study.html">Return to the featured case study</a> · <a href="methodology.html#kam">Read the KAM firewall method</a></footer>
+  <script>
+    (() => {
+      const root = document.getElementById("gfg-statement-preview");
+      if (!root) return;
+      const tabs = Array.from(root.querySelectorAll("[data-tab]"));
+      const panels = {
+        pl: root.querySelector("#panel-pl"),
+        oci: root.querySelector("#panel-oci"),
+        bs: root.querySelector("#panel-bs"),
+        eq: root.querySelector("#panel-eq"),
+        cf: root.querySelector("#panel-cf")
+      };
+      const selectTab = (tab, moveFocus = false) => {
+        const selected = tab.getAttribute("data-tab");
+        tabs.forEach((item) => {
+          const active = item === tab;
+          item.setAttribute("aria-selected", active ? "true" : "false");
+          item.setAttribute("tabindex", active ? "0" : "-1");
+        });
+        Object.entries(panels).forEach(([key, panel]) => {
+          panel.hidden = key !== selected;
+        });
+        if (moveFocus) tab.focus();
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => selectTab(tab));
+        tab.addEventListener("keydown", (event) => {
+          let next = index;
+          if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
+          else if (event.key === "ArrowLeft") next = (index - 1 + tabs.length) % tabs.length;
+          else if (event.key === "Home") next = 0;
+          else if (event.key === "End") next = tabs.length - 1;
+          else return;
+          event.preventDefault();
+          selectTab(tabs[next], true);
+        });
+      });
+    })();
+  </script>
+</div>
+</body>
+</html>
+

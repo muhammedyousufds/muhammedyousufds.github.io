@@ -43,15 +43,16 @@
     #gfg-statement-preview .brand small { display:block; color:var(--muted); font-size:11px; font-weight:500; }
     #gfg-statement-preview .nav { display:flex; flex-wrap:wrap; gap:18px; color:var(--muted); font-size:12px; }
     #gfg-statement-preview .nav span:last-child { color:var(--ink); }
-    #gfg-statement-preview .hero { padding:38px 0 24px; }
+    #gfg-statement-preview .hero { grid-template-columns:minmax(0,1.6fr) minmax(285px,.9fr); gap:40px; align-items:start; padding:32px 0 28px; }
+    #gfg-statement-preview .hero-copy { min-width:0; }
     #gfg-statement-preview .eyebrow { margin:0 0 10px; color:var(--teal); font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
     #gfg-statement-preview h1, #gfg-statement-preview h2, #gfg-statement-preview h3 { color:var(--navy); }
     #gfg-statement-preview h1 { max-width:900px; margin:0; font:600 clamp(38px,5.4vw,64px)/1.02 "Source Serif 4", Georgia, serif; letter-spacing:-.035em; }
     #gfg-statement-preview .lede { max-width:780px; margin:16px 0 0; color:var(--muted); font-size:16px; }
-    #gfg-statement-preview .scope { display:flex; align-items:flex-start; justify-content:space-between; gap:18px; margin:20px 0 0; padding:13px 15px; background:var(--soft); }
+    #gfg-statement-preview .scope { display:block; margin:4px 0 0; padding:18px 20px; background:var(--soft); }
     #gfg-statement-preview .scope strong { color:var(--ink); font-size:12px; }
     #gfg-statement-preview .scope p { margin:2px 0 0; color:var(--muted); font-size:12px; }
-    #gfg-statement-preview .scope-tag { flex:0 0 auto; color:var(--teal); font-size:11px; font-weight:700; letter-spacing:.04em; }
+    #gfg-statement-preview .scope-tag { display:block; margin-top:14px; color:var(--teal); font-size:11px; font-weight:700; letter-spacing:.04em; }
     #gfg-statement-preview .company-context { display:grid; grid-template-columns:190px minmax(0,1fr); gap:22px; margin:0 0 24px; padding:17px 19px; background:var(--surface); border:1px solid var(--line); }
     #gfg-statement-preview .company-context h2 { margin:0; font:600 21px/1.15 "Source Serif 4", Georgia, serif; }
     #gfg-statement-preview .company-context p { margin:0; color:var(--muted); font-size:13px; }
@@ -118,6 +119,10 @@
     #gfg-statement-preview .preview-focus { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:24px; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
     #gfg-statement-preview .kam-map { grid-template-columns:repeat(2,minmax(0,1fr)); }
     #gfg-statement-preview .preview-focus p { margin:6px 0 0; color:var(--muted); font-size:12px; }
+    @media (max-width:920px) {
+      #gfg-statement-preview .hero { grid-template-columns:1fr; gap:20px; }
+      #gfg-statement-preview .scope { max-width:700px; margin:0; }
+    }
     @media (max-width:800px) {
       #gfg-statement-preview .page { padding:16px 18px 28px; }
       #gfg-statement-preview .statement-grid { grid-template-columns:1fr; }
@@ -153,9 +158,11 @@
       <nav class="nav" id="primary-nav" aria-label="Main navigation"><a href="index.html#about">About</a><a href="case-study.html">Featured project</a><a aria-current="page" href="statement-analysis.html">Statement analysis</a><a href="methodology.html">Methodology</a><a href="evidence.html">Evidence</a></nav>
     </header>
     <section class="hero">
-      <p class="eyebrow">Project 01 · Financial statement analysis</p>
-      <h1>Global Fashion Group S.A.</h1>
-      <p class="lede">A public-source analysis of what changed in FY2025, what may explain the movements, and what evidence an auditor might seek next.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Statement analysis · FY2024–FY2025</p>
+        <h1>Global Fashion Group S.A.</h1>
+        <p class="lede">A public-source analysis of what changed in FY2025, what may explain the movements, and what evidence an auditor might seek next.</p>
+      </div>
       <div class="scope">
         <div><strong>Consolidated Group statements · €m unless stated</strong><p>FY2024 comparisons use figures as presented in the FY2025 report. The cash-flow statement includes both continuing and discontinued operations.</p></div>
         <span class="scope-tag">PUBLIC-SOURCE ANALYSIS</span>
@@ -167,16 +174,6 @@
         <p>Global Fashion Group is an online fashion and lifestyle group operating Dafiti, ZALORA and THE ICONIC across Latin America, Southeast Asia, Australia and New Zealand.</p>
         <p>Its business and reporting make revenue, product mix, inventory, returns and currency useful areas to examine. Chile was classified as a discontinued operation in FY2025. The profit-or-loss comparison follows the FY2025 report’s continuing-operations presentation, while the cash-flow statement includes both continuing and discontinued operations.</p>
       </div>
-    </section>
-    <section class="preview-focus" aria-label="How this extension fits the project">
-      <div><strong>Later statement-analysis extension</strong><p>Prepared after the separate KAM comparison, using the published FY2025 report.</p></div>
-      <div><strong>Original firewall preserved</strong><p>The original pre-KAM risk assessment remains frozen and unchanged.</p></div>
-      <div><strong>What the measures mean</strong><p>Ratios are screening indicators that lead to questions; they do not prove a misstatement or reproduce audit work.</p></div>
-    </section>
-    <section class="metrics" aria-label="Selected movements">
-      <div class="metric"><span class="metric-label">Reported revenue · FY2025</span><span class="metric-value">€679.8m</span><span class="metric-note">€42.8m lower than FY2024 (€722.6m) · −5.9% from reported euro figures</span></div>
-      <div class="metric"><span class="metric-label">Gross margin · calculated</span><span class="metric-value">46.4%</span><span class="metric-note">44.9% in FY2024 · up 1.5 percentage points</span></div>
-      <div class="metric"><span class="metric-label">Continuing-operations loss</span><span class="metric-value">€55.7m</span><span class="metric-note">€77.9m in FY2024 · loss narrowed by €22.2m</span></div>
     </section>
     <div class="statement-tabs" role="tablist" aria-label="Financial statements">
       <button class="statement-tab" id="tab-pl" type="button" role="tab" aria-controls="panel-pl" aria-selected="true" tabindex="0" data-tab="pl">Profit or loss</button>

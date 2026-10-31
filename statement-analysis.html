@@ -37,13 +37,13 @@
     }
     #gfg-statement-preview * { box-sizing: border-box; }
     #gfg-statement-preview .page { max-width: 1180px; margin: 0 auto; padding: 22px 30px 36px; }
-    #gfg-statement-preview .header-shell { max-width:1180px; margin:0 auto; padding:22px 30px 0; }
+    #gfg-statement-preview .header-shell { position:sticky; top:0; z-index:5; width:100%; max-width:none; margin:0; padding:0; border-bottom:1px solid var(--line); background:var(--surface); }
     #gfg-statement-preview main.page { padding-top:0; }
-    #gfg-statement-preview .topbar { display:flex; justify-content:space-between; align-items:center; gap:20px; padding: 8px 0 18px; border-bottom:1px solid var(--line); }
+    #gfg-statement-preview .topbar { position:static; display:flex; width:min(1120px,calc(100% - 56px)); min-height:74px; align-items:center; justify-content:space-between; gap:20px; margin:0 auto; padding:10px 0; border:0; background:transparent; }
     #gfg-statement-preview .brand { display:flex; align-items:center; gap:11px; font-weight:700; letter-spacing:.01em; }
     #gfg-statement-preview .monogram { display:grid; place-items:center; width:37px; height:37px; border:1px solid var(--line); color:var(--teal); font-family:"Source Serif 4", Georgia, serif; font-size:18px; font-weight:700; }
     #gfg-statement-preview .brand small { display:block; color:var(--muted); font-size:11px; font-weight:500; }
-    #gfg-statement-preview .nav { display:flex; flex-wrap:wrap; gap:18px; color:var(--muted); font-size:12px; }
+    #gfg-statement-preview .nav { display:flex; flex-wrap:wrap; gap:22px; color:var(--muted); font-size:13px; }
     #gfg-statement-preview .nav span:last-child { color:var(--ink); }
     #gfg-statement-preview .hero { grid-template-columns:minmax(0,1.6fr) minmax(285px,.9fr); gap:40px; align-items:start; padding:32px 0 28px; }
     #gfg-statement-preview .hero-copy { min-width:0; }
@@ -144,12 +144,19 @@
     }
     @media (max-width:800px) {
       #gfg-statement-preview .page { padding:16px 18px 28px; }
-      #gfg-statement-preview .header-shell { padding:16px 18px 0; }
+      #gfg-statement-preview .header-shell { padding:0; }
       #gfg-statement-preview .statement-grid { grid-template-columns:minmax(0,1fr); }
       #gfg-statement-preview .analysis { margin-top:15px; }
     }
+    @media (max-width:600px) {
+      #gfg-statement-preview .header-shell { padding:0; }
+      #gfg-statement-preview .topbar { width:calc(100% - 38px); min-height:66px; padding:10px 0; flex-direction:row; flex-wrap:wrap; align-items:center; }
+      #gfg-statement-preview .nav { display:none; position:absolute; top:100%; right:0; left:0; z-index:6; flex-direction:column; gap:0; padding:8px 19px 12px; border-bottom:1px solid var(--line); background:var(--surface); box-shadow:0 8px 18px rgba(19,47,61,.08); }
+      #gfg-statement-preview .nav.open { display:flex; }
+      #gfg-statement-preview .statement-tabs { top:66px; }
+    }
     @media (max-width:560px) {
-      #gfg-statement-preview .topbar { align-items:flex-start; }
+      #gfg-statement-preview .topbar { align-items:center; }
       #gfg-statement-preview .nav { display:none; }
       #gfg-statement-preview .nav.open { display:flex; position:absolute; top:100%; right:0; left:0; z-index:6; flex-direction:column; gap:0; padding:8px 19px 12px; border-bottom:1px solid var(--line); background:var(--surface); }
       #gfg-statement-preview .hero { padding-top:27px; }
@@ -159,7 +166,7 @@
       #gfg-statement-preview .metrics { grid-template-columns:1fr; }
       #gfg-statement-preview .metric, #gfg-statement-preview .metric + .metric { padding:11px 0; border-left:0; }
       #gfg-statement-preview .metric + .metric { border-top:1px solid var(--line); }
-      #gfg-statement-preview .statement-tabs { top:74px; gap:15px; overflow-x:auto; scrollbar-width:thin; margin-bottom:5px; }
+      #gfg-statement-preview .statement-tabs { top:66px; gap:15px; overflow-x:auto; scrollbar-width:thin; margin-bottom:5px; }
       #gfg-statement-preview .tab-scroll-hint { display:block; margin:0 0 19px; color:var(--muted); font-size:11px; text-align:right; }
       #gfg-statement-preview .statement-tab { flex:0 0 auto; font-size:13px; }
       #gfg-statement-preview .section-heading, #gfg-statement-preview .ratio-intro { display:block; }
@@ -177,7 +184,7 @@
       <a class="wordmark" href="index.html"><span class="mark">MY</span><span>Muhammed Yousuf<small>Accounting · Audit · Analytics</small></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">Menu</button>
       <nav class="nav" id="primary-nav" aria-label="Main navigation"><a href="index.html#about">About</a><a href="case-study.html">Featured project</a><a aria-current="page" href="statement-analysis.html">Statement analysis</a><a href="methodology.html">Methodology</a><a href="evidence.html">Evidence</a></nav>
-    </hea
+    </header>
   </div>
   <main class="page" id="main" aria-label="GFG consolidated financial statement analysis">
     <section class="hero">

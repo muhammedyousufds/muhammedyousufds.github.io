@@ -1,0 +1,10 @@
+component,EURm,basis
+IFRS cash and cash equivalents,176.5,Reported; source register S10
+APM restricted cash and deposit receivables adjustment,8.6,Reported APM; source register S17
+Investment funds in APM reconciliation,0.0,Reported; source register S24
+Calculated Pro-Forma Cash,185.1,Calculated sum of above
+Published Pro-Forma Cash,185.1,Reported; source register S23
+Difference to published APM,0.0,Calculated
+Note 16 restricted cash plus deposit receivables,9.5,Reported component total; source register C04
+Unallocated Note 16 total less APM adjustment,0.9,Unresolved public-source limitation; no allocation
+

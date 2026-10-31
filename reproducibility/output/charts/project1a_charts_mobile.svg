@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" width="360" height="1320" viewBox="0 0 360 1320">
+<title id="title">GFG financial analytics — mobile chart</title>
+<desc id="desc">Mobile-layout chart showing FY2024 and FY2025 financial trends, negative working capital values and synthetic sensitivity comparisons.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="16" y="32" text-anchor="start" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324F">GFG Project 1A</text>
+<text x="16" y="56" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#657583">Public-source analytics · €m unless stated</text>
+<text x="16" y="98" text-anchor="start" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324F">Financial trends</text>
+<text x="16" y="121" text-anchor="start" font-family="Arial, sans-serif" font-size="11" font-weight="400" fill="#657583">FY2024 = 100 · labels show index values</text>
+<text x="178" y="148" text-anchor="start" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#3677B8">FY2024</text>
+<text x="244" y="148" text-anchor="start" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#17324F">FY2025</text>
+<text x="16" y="178" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#17324F">Revenue</text>
+<rect x="96.0" y="196.0" width="180.0" height="14.0" rx="3" fill="#EAF0F4"/>
+<rect x="96.0" y="196.0" width="171.4" height="14.0" rx="3" fill="#3677B8"/>
+<text x="346" y="208" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#263442">100.0</text>
+<rect x="96.0" y="223.0" width="180.0" height="14.0" rx="3" fill="#EAF0F4"/>
+<rect x="96.0" y="223.0" width="161.3" height="14.0" rx="3" fill="#17324F"/>
+<text x="346" y="235" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#263442">94.1</text>
+<text x="16" y="270" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#17324F">Gross profit</text>
+<rect x="96.0" y="288.0" width="180.0" height="14.0" rx="3" fill="#EAF0F4"/>
+<rect x="96.0" y="288.0" width="171.4" height="14.0" rx="3" fill="#16847E"/>
+<text x="346" y="300" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#263442">100.0</text>
+<rect x="96.0" y="315.0" width="180.0" height="14.0" rx="3" fill="#EAF0F4"/>
+<rect x="96.0" y="315.0" width="166.7" height="14.0" rx="3" fill="#17324F"/>
+<text x="346" y="327" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#263442">97.3</text>
+<text x="16" y="362" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#17324F">Net inventory</text>
+<rect x="96.0" y="380.0" width="180.0" height="14.0" rx="3" fill="#EAF0F4"/>
+<rect x="96.0" y="380.0" width="171.4" height="14.0" rx="3" fill="#E49B31"/>
+<text x="346" y="392" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#263442">100.0</text>
+<rect x="96.0" y="407.0" width="180.0" height="14.0" rx="3" fill="#EAF0F4"/>
+<rect x="96.0" y="407.0" width="145.6" height="14.0" rx="3" fill="#17324F"/>
+<text x="346" y="419" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#263442">85.0</text>
+<line x1="16" y1="462" x2="344" y2="462" stroke="#D8E1E7" stroke-width="1"/>
+<text x="16" y="494" text-anchor="start" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324F">GFG-defined net working capital</text>
+<text x="16" y="516" text-anchor="start" font-family="Arial, sans-serif" font-size="11" font-weight="400" fill="#657583">Longer bar = more negative</text>
+<text x="16" y="552" text-anchor="start" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#17324F">FY2024</text>
+<text x="344" y="552" text-anchor="end" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#263442">−€54.8m</text>
+<rect x="16.0" y="564.0" width="328.0" height="19.0" rx="4" fill="#EAF0F4"/>
+<rect x="16.0" y="564.0" width="223.8" height="19.0" rx="4" fill="#3677B8"/>
+<text x="16" y="626" text-anchor="start" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#17324F">FY2025</text>
+<text x="344" y="626" text-anchor="end" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#263442">−€80.3m</text>
+<rect x="16.0" y="638.0" width="328.0" height="19.0" rx="4" fill="#EAF0F4"/>
+<rect x="16.0" y="638.0" width="328.0" height="19.0" rx="4" fill="#17324F"/>
+<text x="16" y="720" text-anchor="start" font-family="Arial, sans-serif" font-size="11" font-weight="400" fill="#657583">Management-defined APM; not conventional current assets less current liabilities.</text>
+<line x1="16" y1="748" x2="344" y2="748" stroke="#D8E1E7" stroke-width="1"/>
+<text x="16" y="781" text-anchor="start" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324F">Illustrative ANZ sensitivity</text>
+<text x="16" y="803" text-anchor="start" font-family="Arial, sans-serif" font-size="10" font-weight="400" fill="#657583">Scenario change as % of published one-variable threshold</text>
+<text x="16" y="844" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#17324F">Discount rates</text>
+<rect x="16.0" y="856.0" width="260.0" height="18.0" rx="4" fill="#EAF0F4"/>
+<rect x="16.0" y="856.0" width="65.0" height="18.0" rx="4" fill="#16847E"/>
+<text x="344" y="871" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#263442">25.0%</text>
+<text x="16" y="930" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#17324F">EBITDA margin</text>
+<rect x="16.0" y="942.0" width="260.0" height="18.0" rx="4" fill="#EAF0F4"/>
+<rect x="16.0" y="942.0" width="86.7" height="18.0" rx="4" fill="#16847E"/>
+<text x="344" y="957" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#263442">33.3%</text>
+<text x="16" y="1016" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#17324F">Capital expenditure</text>
+<rect x="16.0" y="1028.0" width="260.0" height="18.0" rx="4" fill="#EAF0F4"/>
+<rect x="16.0" y="1028.0" width="96.7" height="18.0" rx="4" fill="#16847E"/>
+<text x="344" y="1043" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#263442">37.2%</text>
+<text x="16" y="1102" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#17324F">Revenue growth</text>
+<rect x="16.0" y="1114.0" width="260.0" height="18.0" rx="4" fill="#EAF0F4"/>
+<rect x="16.0" y="1114.0" width="78.8" height="18.0" rx="4" fill="#16847E"/>
+<text x="344" y="1129" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#263442">30.3%</text>
+<text x="16" y="1210" text-anchor="start" font-family="Arial, sans-serif" font-size="10" font-weight="400" fill="#657583">Synthetic assumptions only · not a forecast or impairment calculation.</text>
+<text x="16" y="1240" text-anchor="start" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#17324F">Validated numeric coverage: FY2024–FY2025 only.</text>
+</svg>

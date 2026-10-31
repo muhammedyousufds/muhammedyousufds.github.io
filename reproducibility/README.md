@@ -1,27 +1,47 @@
-# GFG public calculation sample
+# GFG Project 1A — Python and Excel calculation package
 
-This small package reproduces 15 selected calculations shown in the portfolio. It uses a limited set of public-source figures and Python 3's standard library; it contains no private workpapers, raw company records, Excel workbook, full risk register, KAM source material or approval records.
+This public package contains the complete **76-check Python–Excel reconciliation** described in the portfolio. It includes the Python scripts, sanitized public-source inputs, the four-sheet Excel workbook, generated outputs and the detailed check results.
 
-## Run
+Prepared by [Muhammed Yousuf](https://muhammedyousufds.github.io/) · [LinkedIn](https://www.linkedin.com/in/muhammedyousuf111197/)
 
-From the website repository root:
+## Run it
+
+Requirements: Python 3.10 or later. The scripts use Python's standard library and need no network access or third-party packages.
+
+From this folder, run:
 
 ```text
-python reproducibility/run_checks.py
+python run_checks.py
 ```
 
-The script reads `inputs.csv` and writes `results.csv` in this folder. It runs without third-party packages. A clean run reports 15 checks passed and zero failed. Outputs are rounded to four decimal places and compared with the listed reference value within an absolute tolerance of €0.00015m or 0.00015 percentage points, as applicable.
+The runner regenerates the analysis outputs and charts, then runs the Python–Excel reconciliation. A successful run reports **76 checks passed, zero failed**, and checks that the workbook contains **61 formulas with saved results and no formula errors**. The detailed comparison is written to `output/reconciliation_results.csv`; a readable report is written to `output/calculation_reconciliation.md`.
 
-## Scope and interpretation
+The checks compare the regenerated Python results with the workbook's saved formula results. They do not launch Excel or another spreadsheet application to recalculate the workbook. The script checks that formula results are present and error-free, then compares the defined overlapping values within the stated tolerances. You can inspect or recalculate the workbook separately in Excel or a compatible spreadsheet program.
 
-The checks cover reported-euro revenue movement, calculated gross margins, inventory tie-outs and movements, inventory-provision ratios, GFG-defined net working capital, the Pro-Forma Cash arithmetic and the unresolved Q03 difference. Input rows include their annual-report page or note locator and a direct link to the source disclosure. For the FY2024 NWC inventory input, the calculation uses the €96.4m statement/Note 15 amount to reproduce reported NWC; the KPI table’s €96.3m display difference remains disclosed as Q02.
+## Analysis period and scope
 
-“PASS” means the formula in this script reproduces the documented reference result from the included inputs at the stated rounding/tolerance. It does not validate GFG's accounting records, estimate assumptions or internal controls, and it is not audit evidence. GFG-defined net working capital and Pro-Forma Cash are alternative performance measures (APMs), not IFRS line items. Q03 remains an unexplained €0.9m difference between the Note 16 population and APM adjustment; it is not allocated and is not described as a misstatement.
+The validated quantitative trend analysis covers **FY2024 and FY2025**. The broader portfolio project frame mentions FY2021–FY2025, but this package does not contain a validated FY2021–FY2023 trend series.
 
-The project separately completed 76 Python–Excel checks internally. This sample does not recreate that private test suite or workbook. No GFG records were tested, none of the 45 proposed audit procedures was performed, and no audit opinion is expressed.
+The calculations cover reported financial statement trends, gross margin, inventory composition and provision ratios, GFG-defined net working capital, Pro-Forma Cash, and illustrative comparisons with GFG's published ANZ impairment sensitivity thresholds. The workbook has four sheets: `Overview`, `Inputs`, `Working capital`, and `Inventory and ANZ`.
 
-## Source
+The ANZ scenario changes are synthetic illustrations; they are not GFG forecasts, do not combine interacting assumptions, do not reproduce management's impairment model, and do not calculate an impairment amount.
 
-Global Fashion Group S.A., FY2025 Annual Report, principally the consolidated profit-or-loss statement (printed p.47), consolidated statement of financial position (p.48), inventory Note 15 (p.83), cash Note 16 (p.84), and APM definitions (p.129): [official report PDF](https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline).
+## Sources and input traceability
 
-Company-reported facts and data remain attributable to GFG. This package does not grant rights to the source report, company marks or third-party materials.
+The inputs are selected figures transcribed from GFG's FY2025 Annual Report. Each input row includes its report locator and a direct source link. The supporting input tables also link directly to the relevant report pages:
+
+- [FY2025 Annual Report — consolidated statements, notes and APM definitions](https://ir.global-fashion-group.com/media/document/4253e28d-9c76-4c94-8c4a-d67607b5e277/assets/LU2010095458-JA-2025-EQ-E-00.pdf?disposition=inline#page=47)
+- [FY2025 results announcement](https://ir.global-fashion-group.com/news-detail/global-fashion-group-reports-q4-and-fy-2025-results/135deb4a-36c7-4082-ab84-2641184bda30)
+
+## How to interpret a PASS
+
+A `PASS` means a defined Python result agrees with the corresponding saved Excel result within the displayed tolerance (or matches the stated text flag). It confirms consistency between those calculation outputs; it does **not** validate GFG's underlying accounting records, estimate assumptions or internal controls. The checks are not audit evidence.
+
+The €0.9m difference between the broader Note 16 restricted-cash/deposit-receivable population and the Pro-Forma Cash APM adjustment remains **unexplained and unallocated**. Q03 remains unresolved; no misstatement is inferred.
+
+This is an educational public-source analysis, not a statutory audit. No company records were tested, none of the 45 proposed procedures was performed, and no audit opinion is expressed. The package does not include the full risk assessment, proposed-procedure register, approval records, freeze manifest or AI prompt/review logs.
+
+## Attribution and licence
+
+The MIT licence in `LICENSE` applies to original code only. GFG's report, company marks and source data remain subject to their respective rights. GFG does not sponsor or endorse this project.
+

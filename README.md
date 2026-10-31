@@ -20,15 +20,15 @@ Key observations include reported-euro revenue of €679.8m in FY2025 versus €
 
 The project used Python for financial calculations and chart preparation, Excel formulas for a parallel analytical workbook, and AI assistance for organising public disclosures and drafting selected observations. The public website uses HTML, CSS, JavaScript and accessible SVG charts.
 
-Run the limited public calculation sample from the repository root:
+Run the complete public Python–Excel package from the repository root:
 
 ```text
 python reproducibility/run_checks.py
 ```
 
-It uses Python 3’s standard library, reads the included source-linked `inputs.csv`, writes `results.csv`, and reproduces 15 selected calculations. A clean run reports 15 passed and zero failed. Each check includes its formula, result, reference value, tolerance and source locator. The inputs are selected public-source figures, not company records.
+The package uses Python 3.10 or later and the standard library. It includes source-linked inputs, the original calculation and reconciliation scripts, the four-sheet Excel workbook, generated outputs and the full 76-check result table. A clean run reports 76 checks passed and zero failed; the checker also confirms 61 saved workbook formulas have results and no formula errors. The checks compare Python outputs with saved Excel values; they do not launch Excel to recalculate the workbook or validate company accounting records.
 
-Separately, the internal project workflow completed 76 Python–Excel cross-checks, including a workbook with 61 saved formulas. The full workbook, input set and detailed reconciliation log are not public; those 76 checks are not independently rerunnable from this repository. The 15 public checks are a newly scoped sample, not a claim that the full internal suite has been published.
+The [complete ZIP package](https://muhammedyousufds.github.io/downloads/GFG_Project1A_python_excel_76_checks_v1.1.zip), [standalone workbook](https://muhammedyousufds.github.io/reproducibility/excel/GFG_Project1A_analytics_demo_v0.1.xlsx) and [detailed check results](https://muhammedyousufds.github.io/reproducibility/output/reconciliation_results.csv) are available to download.
 
 ## Responsible AI and human review
 
@@ -59,7 +59,7 @@ evidence.html               Public evidence and reproducibility status
 styles.css, site.js         Responsive visual system and accessible navigation
 assets/                     Responsive chart SVGs
 downloads/                  Author-reviewed selected portfolio reports
-reproducibility/            Limited public inputs, Python script, run guide, results
+reproducibility/            Full 76-check Python–Excel package, inputs, workbook and results
 ```
 
 The separate technical research repository and private working papers are not linked or included.

@@ -29,6 +29,9 @@
     #case-study-draft-v2 a { color: var(--cs-teal); text-underline-offset: 3px; }
     #case-study-draft-v2 .cs-wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
     #case-study-draft-v2 .cs-top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
       background: var(--cs-surface);
       border-bottom: 1px solid var(--cs-line);
     }
@@ -220,7 +223,7 @@
         <p class="cs-lede">AI-assisted, human-reviewed analysis of public financial information and potential audit risks.</p>
         <div class="cs-ai">
           <strong>How AI fits:</strong>
-          <span class="cs-flow">AI organizes disclosures and suggests questions</span>
+          <span class="cs-flow">AI organises disclosures and suggests questions</span>
           <span aria-hidden="true">→</span>
           <span class="cs-flow">Python and Excel recalculate selected figures</span>
           <span aria-hidden="true">→</span>
@@ -411,7 +414,7 @@
           <h2>Independent analysis, then comparison</h2>
         </div>
         <div class="cs-kam-copy">
-          <p>The independent risk assessment was frozen before the separate comparison with EY’s published FY2025 Key Audit Matters. The mapping shows thematic overlap only: it does not mean EY endorsed this project, show that the project found a misstatement, or assess audit quality.</p>
+          <p>The project reports that the independent risk assessment was frozen before the separate comparison with EY’s published FY2025 Key Audit Matters; readers cannot independently verify the timing from the public materials. The mapping shows thematic overlap only: it does not mean EY endorsed this project, show that the project found a misstatement, or assess audit quality.</p>
           <p>The detailed statement-to-KAM mapping is on the Statement Analysis page. File-integrity and checksum detail belongs in the methodology, where readers can see how the comparison was preserved.</p>
           <a class="cs-button secondary" href="https://muhammedyousufds.github.io/statement-analysis.html#kam-extension">See the Statement Analysis and KAM mapping →</a>
         </div>
